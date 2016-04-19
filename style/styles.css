@@ -9,7 +9,7 @@ body {
 
 @-webkit-keyframes bodymove {
 	0%   { transform:translateY(0px);}
-	50%   { transform:translateY(4px); }
+	50%   { transform:translateY(5px); }
 	100% { transform:translateY(0px); }
 }
 
@@ -62,7 +62,12 @@ body {
 	-webkit-animation:talking 1.5s infinite;
 }
 
+/*------------------Kiwi container
+*/
 
+.kiwi-container{
+	padding:2em;
+}
 
 /*------------------Speech bubble
 */
