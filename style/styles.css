@@ -1,0 +1,91 @@
+body {
+	height:100%;
+	width:100%;
+	margin:0 auto;
+}
+
+/*------------------Animation
+*/
+
+@-webkit-keyframes bodymove {
+	0%   { transform:translateY(0px);}
+	50%   { transform:translateY(4px); }
+	100% { transform:translateY(0px); }
+}
+
+
+@-webkit-keyframes headmove {
+	0%   { transform:translateY(0px); transform:rotate(0deg);}
+	50%   { transform:translateY(10px);transform:rotate(.7deg); }
+	100% { transform:translateY(0px);transform:rotate(0deg); }
+}
+
+@-webkit-keyframes blink {
+
+	0% , 49%   { transform:scaleY(1); }
+	50%   { transform:scaleY(.01); }
+	51%, 100% { transform:scaleY(1); }
+
+}
+
+@-webkit-keyframes talking {
+	0%   { transform:rotate(0deg);}
+	20%   { transform:rotate(.4deg); }
+	40% { transform:rotate(0deg); }
+	60%   { transform:rotate(.5deg); }
+	70% { transform:rotate(0deg); }
+	85%   { transform:rotate(.4deg); }
+	100% { transform:rotate(0deg); }
+}
+
+#all-body {
+	-webkit-animation: bodymove 2s infinite;
+}
+
+#all-head {
+	-webkit-animation: headmove 2s infinite;
+	-webkit-animation-delay: .1s;
+}
+
+#left-eye {
+	-webkit-animation: blink 10s infinite;
+	transform-origin:center;
+}
+
+#right-eye {
+	-webkit-animation: blink 10s infinite;
+	transform-origin:center;
+	-webkit-animation-delay: .03s;
+}
+
+#bottom-beak {
+	-webkit-animation:talking 1.5s infinite;
+}
+
+
+
+/*------------------Speech bubble
+*/
+
+.text-container{
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.speech-bubble {
+	padding:2em;
+}
+
+.speech-bubble button{
+	padding:1em;
+}
+
+.speech-bubble h2{
+	background-color:#f2f2f2;
+	padding:1em;
+	border-radius:10px;
+
+}
+
