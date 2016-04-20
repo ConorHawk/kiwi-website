@@ -59,7 +59,9 @@ body {
 }
 
 #bottom-beak {
-	-webkit-animation:talking 1.5s infinite;
+	-webkit-animation:talking 1s infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: 5;
 }
 
 /*------------------Kiwi container
