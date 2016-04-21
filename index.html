@@ -180,11 +180,35 @@
 			<!-- kiwi svg ends -->
 			<div class="text-container col-sm-4">
 				<div class="speech-bubble">
-					<h2>My friends and I are in trouble. <br> Can you help us?</h2>
-					<button type="button" class="btn btn-danger">I sure can!</button>
+					<h2 id="bubbleGreeting">My friends and I are in trouble. <br> Can you help us?</h2>
+					<h2 id="bubbleContent">My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. </h2>
 				</div>
+				<button type="button" id="cta" class="btn btn-danger">I sure can!</button>
+
 			</div>
 		</div>
 	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('#cta').click(function(){
+					$(this).hide(500);
+					$('#bubbleGreeting').animate({opacity:0},function(){
+
+						$('#bubbleContent').show('slow');
+						$('#bubbleGreeting').hide(750);
+
+					});
+					
+				});
+
+
+		});
+
+
+	</script>
 </body>
 </html>

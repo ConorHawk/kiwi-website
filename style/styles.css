@@ -2,7 +2,7 @@ body {
 	width:100%;
 	margin:0 auto;
 	background-image: url("../images/background1080.png"); 
-background-size: cover;
+	background-size: cover;
 
 
 
@@ -93,21 +93,30 @@ background-size: cover;
 	height:100vh;
 	display:flex;
 	justify-content:center;
-	align-items:center;
+	align-items:flex-start;
+	flex-direction:column;
 }
 
 .speech-bubble {
-	padding:2em;
+	background-color:#f2f2f2;
+	border-radius:10px;
+	width:85%;
+	min-width:85%;
+
 }
 
-.speech-bubble button{
+.btn {
 	padding:1em;
+	margin-top:2em;
 }
 
 .speech-bubble h2{
-	background-color:#f2f2f2;
-	padding:1em;
-	border-radius:10px;
 
+	padding:1em;
 }
+
+#bubbleContent {
+	display:none;
+}
+
 
