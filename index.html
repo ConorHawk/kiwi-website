@@ -3,10 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/styles.css">
 	<title>Kiwis for Kiwi</title>
 </head>
 <body>
+	<header>
+	<div class="nav-bar">
+		<img src="images/logo.png" alt="">
+		<div class="social-icons">
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-pinterest"></i>
+			<i class="fa fa-instagram"></i>
+		</div>
+		</div>
+	</header>
 
 	<div class="background">
 
@@ -189,21 +200,23 @@
 		</div>
 	</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
 
-			$(document).ready(function(){
+		$(document).ready(function(){
 
-				$('#cta').click(function(){
-					$(this).hide(500);
-					$('#bubbleGreeting').animate({opacity:0},function(){
+			$('#cta').click(function(){
+				$(this).hide(500);
+				$('#bubbleGreeting').animate({opacity:0},function(){
 
-						$('#bubbleContent').show('slow');
-						$('#bubbleGreeting').hide(750);
-
+					$('#bubbleContent').show('slow');
+					$('#bubbleGreeting').hide(750,function(){
+						$('#bubbleContent').animate({opacity:1});
 					});
-					
+
 				});
+
+			});
 
 
 		});

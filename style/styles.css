@@ -68,6 +68,40 @@ body {
 	-webkit-animation-iteration-count: 5;
 }
 
+
+/*------------------Nav Bar
+*/
+
+.nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5555;
+	width:100%;
+}
+
+.nav-bar img {
+	width:115px;
+	height:125px;
+	float:left;
+	padding:1em;
+	opacity:.5;
+	margin-left:2em;
+}
+
+.social-icons {
+	display:inline-block;
+	float:right;
+	padding:1em;
+	padding-right:2em;
+}
+
+.social-icons i {
+	color: rgba(255, 255, 255, .3);
+	font-size:50px;
+	padding:.3em;
+}
+
 /*------------------Kiwi container
 */
 
@@ -90,7 +124,7 @@ body {
 */
 
 .text-container{
-	height:100vh;
+	height:100vh; 
 	display:flex;
 	justify-content:center;
 	align-items:flex-start;
@@ -100,8 +134,8 @@ body {
 .speech-bubble {
 	background-color:#f2f2f2;
 	border-radius:10px;
-	width:85%;
-	min-width:85%;
+	width:90%;
+
 
 }
 
@@ -117,6 +151,7 @@ body {
 
 #bubbleContent {
 	display:none;
+	opacity:0;
 }
 
 
