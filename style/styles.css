@@ -1,7 +1,11 @@
 body {
-	height:100%;
 	width:100%;
 	margin:0 auto;
+	background-image: url("../images/background1080.png"); 
+background-size: cover;
+
+
+
 }
 
 /*------------------Animation
@@ -67,8 +71,19 @@ body {
 /*------------------Kiwi container
 */
 
+
+
 .kiwi-container{
-	padding:2em;
+	display:flex;
+	padding:4em;
+	align-items:flex-end;
+	height:100vh;
+
+}
+
+.kiwi{
+	flex:1;
+
 }
 
 /*------------------Speech bubble
