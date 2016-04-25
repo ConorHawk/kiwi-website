@@ -5,29 +5,63 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kiwis for Kiwi</title>
 </head>
 <body>
+
+	<!-- Audio -->
+	<iframe width="0" height="0" src="https://www.youtube.com/embed/rc-wZfY97oY?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+	<audio controls autoplay style="display:none"><source src="audio/peep2.mp3" type="audio/mpeg"></audio>
+	<!-- Audio -->
+
+	<!-- nav-bar -->
 	<header>
-	<div class="nav-bar">
-		<img src="images/logo.png" alt="">
-		<div class="social-icons">
-			<i class="fa fa-facebook-square"></i>
-			<i class="fa fa-pinterest"></i>
-			<i class="fa fa-instagram"></i>
-		</div>
+		<div class="nav-bar">
+			<img src="images/logo.png" alt="">
+			<div class="social-icons">
+				<a target="blank" href="http://facebook.com"><i class="fa fa-facebook-square"></i></a>
+				<a target="blank" href="http://pinterest.com"><i class="fa fa-pinterest"></i></a>
+				<a target="blank" href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+			</div>
 		</div>
 	</header>
+	<!-- nav-bar -->
 
-	<div class="background">
+	<div class="row-fluid all-container">
 
-		<!-- kiwi svg -->
+		<!-- speech bubble content -->
 
-		<div class="row">
+		<div class="text-container col-xs-10  col-sm-4 col-sm-push-8">
+			<div class="text-container-contents">
+				<div class="speech-bubble">
+					<h2 id="bubbleGreeting">My friends and I are in trouble. <br> Can you help us? <br></h2>
+					<h2 id="bubbleContent">Thanks! <br>	
 
-			<div class="kiwi-container col-sm-7">
+						Theres heaps of stuff you could do to help out!<br>	
+
+						You could spread the word about <a href="	https://www.kiwisforkiwi.org/take-action/its-save-kiwi-month/">Save Kiwi Month.</a> <br>	
+
+						or maybe you want to join the <a href="	https://www.kiwisforkiwi.org/take-action/quest-for-kiwi/">Quest for Kiwi.</a> <br>	
+
+						Gather a group of friends together and <a href="	https://www.kiwisforkiwi.org/take-action/volunteer/">volunteer</a> or <a href="	https://www.kiwisforkiwi.org/take-action/fundraise/">fundraise.</a> <br>
+
+						Or you could simply <a href="	https://www.kiwisforkiwi.org/donate/">donate!</a> </h2>
+
+					</div>
+					<div class="arrow-down"></div>
+					<button type="button" id="cta" class="btn btn-danger">I sure can!</button>
+				</div>
+			</div>
+
+			<!-- speech bubble content -->
+
+			<!-- kiwi svg -->
+
+			<div class="kiwi-container col-sm-8 col-sm-pull-4 col-xs-12">
 				<div class="kiwi">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 991 748">
+					<svg height:100% width:100% xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 991 748">
 						<defs>
 							<style>
 
@@ -79,6 +113,10 @@
 
 								.cls-72 {
 									fill: #ebebeb;
+								}
+
+								.cls-75 {
+								  fill: #252525;
 								}
 							</style>
 
@@ -180,6 +218,10 @@
 											<ellipse id="ellipse-5" class="cls-72" cx="651" cy="394" rx="6" ry="8"/>
 										</g>
 									</g>
+									<g id="happy-eyes">
+										<path d="M605.000,447.000 C605.000,447.000 625.638,414.000 647.000,414.000 C666.559,414.000 687.000,447.000 687.000,447.000 C687.000,447.000 667.817,423.000 647.000,423.000 C626.827,423.000 605.000,447.000 605.000,447.000 Z" id="path-57" class="cls-75" fill-rule="evenodd"/>
+										<path d="M748.000,446.000 C748.000,446.000 766.876,416.000 786.415,416.000 C804.304,416.000 823.000,446.000 823.000,446.000 C823.000,446.000 805.454,424.182 786.415,424.182 C767.963,424.182 748.000,446.000 748.000,446.000 Z" id="path-58" class="cls-75" fill-rule="evenodd"/>
+									</g>
 								</g>
 							</g>
 						</g>
@@ -189,39 +231,77 @@
 
 			</div>
 			<!-- kiwi svg ends -->
-			<div class="text-container col-sm-4">
-				<div class="speech-bubble">
-					<h2 id="bubbleGreeting">My friends and I are in trouble. <br> Can you help us?</h2>
-					<h2 id="bubbleContent">My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. My friends and I are in trouble. </h2>
-				</div>
-				<button type="button" id="cta" class="btn btn-danger">I sure can!</button>
 
+		</div>
+
+		<!-- phone bottom bar -->
+		<img class="phone-img" src="images/logo.png" alt="">
+		<button type="button" id="cta2" class="btn btn-danger" data-toggle="modal" data-target="#myModal">I sure can!</button>
+		<!-- phone bottom bar -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel1" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel1">Thanks!</h4>
+				</div>
+				<div class="modal-body">
+					<h2>Theres heaps of stuff you could do to help out!<br>	
+
+						You could spread the word about <a href="	https://www.kiwisforkiwi.org/take-action/its-save-kiwi-month/">Save Kiwi Month.</a> <br>	
+
+						or maybe you want to join the <a href="	https://www.kiwisforkiwi.org/take-action/quest-for-kiwi/">Quest for Kiwi.</a> <br>	
+
+						Gather a group of friends together and <a href="	https://www.kiwisforkiwi.org/take-action/volunteer/">volunteer</a> or <a href="	https://www.kiwisforkiwi.org/take-action/fundraise/">fundraise.</a> <br>
+
+						Or you could simply <a href="	https://www.kiwisforkiwi.org/donate/">donate!</a> </h2>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+				<div class="arrow-down"></div>
 			</div>
 		</div>
-	</div>
+		<!-- Modal -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script>
 
-		$(document).ready(function(){
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
 
-			$('#cta').click(function(){
-				$(this).hide(500);
-				$('#bubbleGreeting').animate({opacity:0},function(){
 
-					$('#bubbleContent').show('slow');
-					$('#bubbleGreeting').hide(750,function(){
-						$('#bubbleContent').animate({opacity:1});
+			$(document).ready(function(){
+
+					// button animation
+
+					var changeSpeed = 500
+
+					$('#cta').click(function(){
+						$(this).hide(500);
+						$('#happy-eyes').fadeIn(500);
+						$('#all-eyes').fadeOut(500);
+						$('#bubbleGreeting').animate({opacity:0},function(){
+							$('#bubbleContent').show(changeSpeed);
+							$('#bubbleGreeting').hide(changeSpeed,function(){
+								$('#bubbleContent').animate({opacity:1});
+							});
+						});
 					});
-
 				});
 
-			});
+				// modal function
 
+				$('#myModal').on('shown.bs.modal', function () {
+					$('#myInput').focus()
+				})
 
-		});
-
-
-	</script>
-</body>
-</html>
+			</script>
+		</body>
+		</html>
